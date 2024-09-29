@@ -1,41 +1,19 @@
-body{
-    max-width: 70%; 
-    font-family: 'Roboto' !important
+// MEDIDA ESCRITORIO (UTILIZO 1920 x 1080 - FULL HD CUSTOM)!
+
+body {
+    max-width: 85%;
+    font-family: 'Roboto' !important;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1{
-    font-weight: bold
+
+h1 {
+    font-weight: bold;
 }
 
-.standard-text{
-    color: #939898;
-    font-size: 170%;
-}
+//NO FUNCIONA CON EL CODIGO COMENTADO ABAJO, SOLO CAMBIA EL COLOR :HOVER (AL HACER CLICK) bug de bootstrap?
 
-.titles {
-    font-size: 360%;
-}
-
-.mancha {
-    background-color: #5265E1;
-    position: absolute;
-    width: 500px;
-    height: 350px;
-    bottom: 0;
-    right: 0;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    z-index: 1;
-}
-
-.imagenPost {
-    position: relative;
-    z-index: 2;
-}
-
-//NO FUNCIONA CON LO DE ABAJO, SOLO CAMBIA EL COLOR :HOVER (AL HACER CLICK)
-
-// $primary: #5265E1;
+// $primary: red;
 // $danger: #FA5959;
 
 // $theme-colors: (
@@ -45,11 +23,299 @@ h1{
 
 .btn-primary {
     background-color: #5265E1 !important;
+    border: none !important;
 }
+
 
 .btn-danger {
     background-color: #FA5959 !important;
+    border: none !important;
 }
 
+.standard-text {
+    color: #939898;
+    font-size: 170%;
+}
 
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+.card-text {
+    color: #939898;
+    font-size: 100%;
+}
+
+.narrow-text {
+    max-width: 60%;
+}
+
+.titles {
+    font-size: 380%;
+}
+
+.mancha {
+    background-color: #5265E1;
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    top: 35%;
+    right: 0;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    z-index: 1;
+}
+
+.imagenPost {
+    position: relative;
+    z-index: 2;
+}
+
+.nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 5px solid #FA5959 !important;
+    color: black;
+    font-weight: bolder;
+}
+
+.blackText {
+    color: black !important;
+}
+
+.mancha2 {
+    background-color: #5265E1;
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top: 145%;
+    left: 0;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    z-index: 1;
+}
+
+.imagenPost2 {
+    position: relative;
+    z-index: 2;
+    padding: 0 48px;
+    width: 100%;
+}
+
+.centerImages {
+    margin: auto;
+    display: block;
+}
+
+.marginTop200 {
+    margin-top: 200px;
+}
+
+.accordion-button::after {
+    background-image: url('img/icon-arrow.svg') !important;
+}
+
+.features-text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.margin-left-text {
+    margin-left: 48px;
+}
+
+.download-text {
+    width: 50%;
+    padding: 48px 0;
+}
+
+.card-1 {
+    align-self: flex-start;
+}
+
+.card-2 {
+    align-self: center;
+}
+
+.card-3 {
+    align-self: flex-end;
+}
+
+.questions-text {
+    width: 50%;
+    padding: 48px 0;
+}
+
+.accordion-width {
+    width: 50%;
+}
+
+// MEDIDA MOVIL (UTILIZO IPHONE XR - 414 x 896)
+@media (max-width: 575.98px) {
+    .navbar-toggler-icon {
+        background-image: url('img/icon-hamburger.svg') !important;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+    }
+
+    .imagenPost {
+        width: 110%;
+        min-width: 330px;
+    }
+
+    .mancha {
+        background-color: #5265E1;
+        position: absolute;
+        width: 280px;
+        height: 200px;
+        top: 25%;
+        right: 0;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        z-index: 1;
+    }
+
+    .mancha2 {
+        background-color: #5265E1;
+        position: absolute;
+        width: 280px;
+        height: 200px;
+        top: 157%;
+        left: 0;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+        z-index: 1;
+    }
+
+    .titles {
+        margin-top: 40px;
+        font-size: 180%;
+        text-align: center
+    }
+
+    .standard-text {
+        color: #939898;
+        font-size: 100%;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .button-group .mainButtons {
+        padding: 15px 15px !important;
+        font-size: 14px;
+    }
+
+    .marginTop200 {
+        margin-top: 100px;
+    }
+
+    .features-text {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 0 !important;
+    }
+
+    .narrow-text {
+        max-width: 100% !important;
+    }
+
+    .text-center p {
+        padding: 1rem 0 !important;
+    }
+
+    .nav-tabs {
+        flex-direction: column !important;
+    }
+
+    .nav .nav-item {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .nav-link.active {
+        position: relative;
+    }
+
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 50%;
+        height: 5px;
+        background-color: #FA5959;
+    }
+
+    .nav-tabs .nav-link.active {
+        border: none !important;
+        border-bottom: none !important;
+    }
+
+    col .imagenPost2 {
+        max-width: 1009px !important;
+    }
+
+    .imagenPost2 {
+
+        padding: 0;
+    }
+
+    .margin-left-text {
+        margin-left: 0;
+    }
+
+    .btn-hidden {
+        display: none !important;
+    }
+
+    .download-text {
+        width: 90%;
+        margin: none;
+    }
+
+    .card-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .card-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .card-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .questions-text {
+        width: 100%;
+        margin: none;
+    }
+
+    .accordion-width {
+        width: 100%;
+    }
+
+    .accordion-button::after {
+        background-image: url('img/icon-arrow.svg') !important;
+        margin-right: -20px;
+    }
+
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap";
